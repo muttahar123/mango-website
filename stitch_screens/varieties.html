@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Mango House - Varieties</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#c8c7bf",
+                      "on-primary-container": "#644000",
+                      "surface-bright": "#fbf9f8",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#6c4100",
+                      "outline-variant": "#d7c3ae",
+                      "tertiary-fixed": "#e4e3db",
+                      "primary-fixed-dim": "#ffb955",
+                      "on-tertiary-fixed": "#1b1c17",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#f5a623",
+                      "surface-container": "#f0eded",
+                      "surface-container-high": "#eae8e7",
+                      "on-tertiary-fixed-variant": "#474742",
+                      "on-secondary-fixed": "#2b1700",
+                      "primary-fixed": "#ffddb4",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#835500",
+                      "tertiary-container": "#b7b6af",
+                      "surface-variant": "#e4e2e1",
+                      "on-secondary-fixed-variant": "#663d00",
+                      "surface-dim": "#dcd9d9",
+                      "secondary": "#875300",
+                      "tertiary": "#5f5f59",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#ffb955",
+                      "on-surface": "#1b1c1c",
+                      "secondary-fixed": "#ffddba",
+                      "secondary-fixed-dim": "#ffb865",
+                      "on-primary-fixed": "#291800",
+                      "surface-container-low": "#f6f3f2",
+                      "on-primary-fixed-variant": "#633f00",
+                      "surface-container-highest": "#e4e2e1",
+                      "secondary-container": "#feaa3c",
+                      "inverse-on-surface": "#f3f0f0",
+                      "on-background": "#1b1c1c",
+                      "surface": "#fbf9f8",
+                      "on-secondary": "#ffffff",
+                      "primary": "#835500",
+                      "on-tertiary-container": "#474742",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#524534",
+                      "inverse-surface": "#303030",
+                      "outline": "#857462",
+                      "on-tertiary": "#ffffff",
+                      "background": "#fbf9f8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "Montserrat"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        /* Custom styles that can't easily be expressed with Tailwind utilities */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 10px 40px -10px rgba(131, 85, 0, 0.08);
+        }
+        
+        .leaf-pattern {
+             background-image: radial-gradient(circle at 50% 50%, rgba(131, 85, 0, 0.02) 0%, transparent 100%);
+             background-size: 100px 100px;
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#FFFDF5] text-on-surface min-h-screen flex flex-col font-body-md antialiased leaf-pattern">
+<!-- TopAppBar (Hidden on mobile, visible on md+) -->
+<header class="hidden md:flex bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm flex items-center justify-between px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-2xl cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-200" data-icon="menu">menu</span>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">The Mango House</h1>
+</div>
+<!-- Desktop Navigation Integration (Simulated from BottomNavBar data) -->
+<nav class="flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:scale-95 duration-200" href="#">Orchard</a>
+<a class="font-label-md text-label-md text-primary font-semibold border-b-2 border-primary pb-1 active:scale-95 duration-200" href="#">Varieties</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:scale-95 duration-200" href="#">Gifting</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:scale-95 duration-200" href="#">Cart</a>
+</nav>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-95 duration-200">
+            Order Now
+        </button>
+</header>
+<!-- Mobile Header (Simplified TopAppBar for mobile) -->
+<header class="md:hidden bg-surface/90 backdrop-blur-md fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 border-b border-outline-variant/30">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">The Mango House</h1>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-95 duration-200">
+            Order
+        </button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-32 md:pt-32 md:pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full relative">
+<!-- Section Header -->
+<div class="mb-12 md:mb-16 text-center max-w-2xl mx-auto">
+<div class="h-px w-16 bg-primary mx-auto mb-6 opacity-30"></div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Our Premium Varieties</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Curated from our estate, each variety offers a distinct sensory journey of flavor, texture, and aroma.</p>
+</div>
+<!-- Horizontal Scroll Container for Cards -->
+<div class="flex overflow-x-auto gap-gutter pb-8 hide-scrollbar snap-x snap-mandatory px-4 -mx-4 md:px-0 md:mx-0">
+<!-- Card 1: Chaunsa -->
+<article class="snap-center shrink-0 w-[280px] md:w-[320px] bg-surface rounded-[24px] border border-primary/20 ambient-shadow overflow-hidden flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+<div class="p-6 pb-0 flex-grow flex flex-col items-center text-center">
+<div class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-surface-container shadow-sm group-hover:scale-105 transition-transform duration-500">
+<img alt="Fresh Chaunsa Mango" class="w-full h-full object-cover" data-alt="A flawless, perfectly ripe Chaunsa mango, glowing with a warm, golden-yellow hue, placed on a clean white marble surface. The lighting is bright and natural, casting soft, elegant shadows that emphasize its plump, juicy texture. The overall aesthetic is luxurious and minimalist, fitting a premium agricultural brand. A single green leaf rests gently nearby, adding a touch of vibrant contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDqa5z0_YwPlAyet6F0R0qkBHICwvwxJMqbCeexG5r7Lhaxe0IX_52m6md3M9_muab0aqfKEPpLFLmAZZ44EWExsQT97EYqj6vKvYGXQ6u9-gfGln9E7ZGAlbz2naoCgZrpbeF7lHN4inYnjRuFEL1JMyfe0VbwsJrRKbBakdIwXE99Px210wsMwK_d6Dn8k0rdPb-clQ9dSjLmA7l1n2FouscLvt3WFoFvQwg7EmTCgREkPflJcWlNE94QOA-pt9bdVxaTl3S2o"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Chaunsa</h3>
+<div class="inline-flex items-center gap-1 bg-surface-variant px-3 py-1 rounded-full mb-4">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-[12px]">Multan</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Exceptionally sweet with a rich, aromatic juice. Often considered the crown jewel of mangoes, offering a melt-in-the-mouth texture.</p>
+</div>
+<div class="p-6 pt-4 border-t border-primary/10 mt-4">
+<button class="w-full py-3 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md transition-colors duration-300 active:scale-95">
+                        Order Chaunsa
+                    </button>
+</div>
+</article>
+<!-- Card 2: Sindhri -->
+<article class="snap-center shrink-0 w-[280px] md:w-[320px] bg-surface rounded-[24px] border border-primary/20 ambient-shadow overflow-hidden flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+<div class="p-6 pb-0 flex-grow flex flex-col items-center text-center">
+<div class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-surface-container shadow-sm group-hover:scale-105 transition-transform duration-500">
+<img alt="Fresh Sindhri Mango" class="w-full h-full object-cover" data-alt="A beautiful, elongated Sindhri mango with smooth, lemon-yellow skin, resting on a textured wooden block. The lighting highlights the firm, blemish-free skin, creating a sense of premium quality and freshness. The scene is bathed in warm, diffused sunlight typical of a high-end editorial food photography shoot. The background is a soft, out-of-focus warm white to maintain the luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8f6vWnkYzyY873Lnj0UYG5YVk_w1XrCQ1dl7bIIqq5mn9b8eFGBhOJrpy1v5-L7IbHl2P9CE71nERuKwBAFv-0K0R9JzHv8YwJOv94Y2YM5GlN0gbO7OdLjsGLQg7RelOci0EZZU0Uvq3Q-NXwcJOeBj2BHtrszzcUI--Z2X8UoN6QqTgSa6765KeXtDodm8k8UmRBnTp7zfDZDqpcRMHn6FuIog_lPt0HaWw74a_9f0ikj_RbftAluJ-zoYvz2ACwq0f5UIvSaU"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Sindhri</h3>
+<div class="inline-flex items-center gap-1 bg-surface-variant px-3 py-1 rounded-full mb-4">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-[12px]">Mirpur Khas</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Large, oval, and distinctly aromatic. Known for its firm texture, vibrant yellow skin, and perfectly balanced sweet-tart flavor profile.</p>
+</div>
+<div class="p-6 pt-4 border-t border-primary/10 mt-4">
+<button class="w-full py-3 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md transition-colors duration-300 active:scale-95">
+                        Order Sindhri
+                    </button>
+</div>
+</article>
+<!-- Card 3: Anwar Ratol -->
+<article class="snap-center shrink-0 w-[280px] md:w-[320px] bg-surface rounded-[24px] border border-primary/20 ambient-shadow overflow-hidden flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+<div class="p-6 pb-0 flex-grow flex flex-col items-center text-center">
+<div class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-surface-container shadow-sm group-hover:scale-105 transition-transform duration-500">
+<img alt="Fresh Anwar Ratol Mango" class="w-full h-full object-cover" data-alt="A petite, perfectly formed Anwar Ratol mango, displaying a rich, deep yellow color with subtle green undertones. It is presented in a minimalist, high-end style on a pristine white ceramic plate. The lighting is soft and studio-quality, emphasizing the delicate curves and smooth texture of the fruit. The overall vibe is elegant, appetizing, and exclusively premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBowvXO69mYgttvX4tfCgG6O78mEHrX3vxrZ8WfYwxg8mWhMd-kHy2MA3YubBY9rjB85X4NG5zCjm8lb237nZSsAp2dxnYJEytrAN7iRs_yWbtn62w1A7XolfKLMMX2tzo9jRC4DKRoxjaN0GoUKVG7iLQ2I-xdtL5wbw7ZWeyBjOdbKkgaP0sc4pfiifLZXj_pOL6i0Tibxr_5DUx8wSszibcJcaP1Fop26XnAm2qzcGfpE5PXf7EaPtqCuSzsLXqHuGXxbiCHVM4"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Anwar Ratol</h3>
+<div class="inline-flex items-center gap-1 bg-surface-variant px-3 py-1 rounded-full mb-4">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-[12px]">Punjab</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Small in size but explosive in flavor. Renowned for its intensely sweet taste, intoxicating fragrance, and buttery, fiberless flesh.</p>
+</div>
+<div class="p-6 pt-4 border-t border-primary/10 mt-4">
+<button class="w-full py-3 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md transition-colors duration-300 active:scale-95">
+                        Order Anwar Ratol
+                    </button>
+</div>
+</article>
+<!-- Card 4: Langra -->
+<article class="snap-center shrink-0 w-[280px] md:w-[320px] bg-surface rounded-[24px] border border-primary/20 ambient-shadow overflow-hidden flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+<div class="p-6 pb-0 flex-grow flex flex-col items-center text-center">
+<div class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-surface-container shadow-sm group-hover:scale-105 transition-transform duration-500">
+<img alt="Fresh Langra Mango" class="w-full h-full object-cover" data-alt="A distinctive Langra mango, characterized by its vibrant green skin even when fully ripe. It rests on a piece of rustic linen against a crisp white background, shot in macro detail to show the fine pores on its skin. The lighting is bright and clean, reflecting a high-end, organic lifestyle brand aesthetic. Dew drops on the skin suggest ultimate freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7eTpRFbwhm0FIg5Je_t7aaVYc0MTfvN5TNfzsTlN4PlLojTEWtK02iRQzRjxtTvXoUmy06e7LnBu4mL3o_Y8DjqGErCS4mecDTGRpXhx3WlSckORRXD_q3CA81igeZ2CQNiQK_n0rAVhj-X3b6FG_umt_biP9wkyXEAcaQdJDRpv3GWBFv7bbayB72Sch7HmDi6eajKBAJ8N8zb8CmpWCvSWv2V6rLNnEkFBR2HkEk4jvzFO9y-Pcb-4IWHOOKVC2MikhtBDZcgM"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Langra</h3>
+<div class="inline-flex items-center gap-1 bg-surface-variant px-3 py-1 rounded-full mb-4">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-[12px]">Varanasi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Maintains a greenish hue when ripe. Famous for its highly aromatic, almost turpentine-like unique flavor and exceptionally juicy, fiberless pulp.</p>
+</div>
+<div class="p-6 pt-4 border-t border-primary/10 mt-4">
+<button class="w-full py-3 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md transition-colors duration-300 active:scale-95">
+                        Order Langra
+                    </button>
+</div>
+</article>
+</div>
+</main>
+<!-- BottomNavBar (Visible only on mobile) -->
+<nav class="md:hidden bg-surface-container dark:bg-surface-container-highest text-primary dark:text-primary-fixed-dim font-label-md text-label-md fixed bottom-0 w-full z-50 rounded-t-xl shadow-[0_-4px_10px_rgba(131,85,0,0.05)] shadow-lg flex justify-around items-center py-2 px-4 w-full">
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 duration-150 cursor-pointer w-16">
+<span class="material-symbols-outlined mb-1" data-icon="nature_people">nature_people</span>
+<span class="text-[10px]">Orchard</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 active:scale-90 duration-150 cursor-pointer w-20">
+<span class="material-symbols-outlined mb-1" data-icon="Park">park</span>
+<span class="text-[10px] font-bold">Varieties</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 duration-150 cursor-pointer w-16">
+<span class="material-symbols-outlined mb-1" data-icon="redeem">redeem</span>
+<span class="text-[10px]">Gifting</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-90 duration-150 cursor-pointer w-16">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_bag">shopping_bag</span>
+<span class="text-[10px]">Cart</span>
+</div>
+</nav>
+</body></html>
